@@ -1,0 +1,62 @@
+#add-project {
+  position: absolute;
+  left: 50%;
+  width: 100px;
+  height: 100px;
+  transform: translate(-50%, -50%);
+  /* border: none; */
+  background-image: url("addProject.jpeg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: inline-block;
+  
+  z-index: 1;
+}
+#select-project{
+  position: absolute;
+  top: 18%; /* adjust as needed */
+  left: 50%; /* adjust as needed */
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.iphone-content {
+  align-items: center;
+}
+
+img[alt="iPhone"] {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(90deg);
+  height: 180%;
+  overflow: hidden;
+  z-index: 0;
+}
+
+#project-table {
+  position: absolute;
+  top: 37%; /* adjust as needed */
+  left: 50%; /* adjust as needed */
+  transform: translate(-50%, -50%);
+  border: 1px solid black;
+  z-index: 1;
+}
+#project-table td, tr{
+  height: 100px;
+  border: 1px solid black;
+  align-items: center;
+}
+
+
+/* #circle-button2 {
+  position: absolute;
+  top: 150px;
+  right: 40px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #f00;
+  border: none;
+  z-index: 1;
+} */
