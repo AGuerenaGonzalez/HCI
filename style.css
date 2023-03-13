@@ -1,10 +1,10 @@
 #add-project {
   position: absolute;
-  left: 50%;
+  top: 53px;
   width: 100px;
   height: 100px;
   transform: translate(-50%, -50%);
-  /* border: none; */
+  border: none;
   background-image: url("addProject.jpeg");
   background-size: contain;
   background-repeat: no-repeat;
@@ -14,14 +14,15 @@
 }
 #select-project{
   position: absolute;
-  top: 18%; /* adjust as needed */
-  left: 50%; /* adjust as needed */
+  top: 15%;
+  left: 50%;
   transform: translate(-50%, -50%);
   z-index: 1;
 }
 
 .iphone-content {
   align-items: center;
+  height: 100%;
 }
 
 img[alt="iPhone"] {
@@ -36,19 +37,29 @@ img[alt="iPhone"] {
 
 #project-table {
   position: absolute;
-  top: 37%; /* adjust as needed */
-  left: 50%; /* adjust as needed */
+  top: 500px;
+  left: 50%;
   transform: translate(-50%, -50%);
-  border: 1px solid black;
+  /* border: 1px solid black; */
   z-index: 1;
+  table-layout: fixed;
+  max-height: 550px;
+  display: block;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 #project-table td, tr{
+  display: block;
   height: 100px;
-  border: 1px solid black;
+  width: 600px;
+  /* border: 1px solid black; */
   align-items: center;
+  text-align: center;
 }
-
-
+button{
+  height: 100px;
+  width: 600px;
+}
 /* #circle-button2 {
   position: absolute;
   top: 150px;
