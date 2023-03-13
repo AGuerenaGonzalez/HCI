@@ -2,30 +2,39 @@
 <html>
 
 <head>
-  <title>My Website</title>
+  <title>Architect Tool</title>
   <link rel="stylesheet" href="style.css">
   <script src="index.js" async></script>
 </head>
 
 <body>
-  <div class="iphone-content">
+  <img src="iphonepic.png" alt="iPhone">
 
-    <img src="iphone.png" alt="iPhone">
+  <div id="iphone-content">
 
-    <h1 id="select-project">Select Project</h1>
+    <div id="project-menu-screen" class="">
+      <h1 id="select-project">Select Project</h1>
 
-    <table id="project-table">
-      <tr>
-        <td><button id="add-project"></button></td>
-      </tr>
-      <!-- <tr> -->
-        <!-- <td>Hello</td> -->
-        <!-- <td><button id="add-project"></button></td> -->
-      <!-- </tr> -->
-    </table>
+      <table id="project-table">
+        <thead>
+          <tr>
+            <td><button id="add-project"></button></td>
+          </tr>
+        </thead>
+      </table>
+    </div>
+
+    <div id="room-screen" class = "hidden">
+
+      <img src="room.png" alt ="room">
+      <button id ="settings-button"></button>
+      <button id = "account-button"></button>
+      <button id = "add-button"></button>
+      <button id = "arrow-button"></button>
+
+    </div>
+
   </div>
 </body>
 
 </html>
-
-<!-- <button class="circle-button"></button> -->
