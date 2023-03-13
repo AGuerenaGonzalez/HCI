@@ -1,6 +1,6 @@
 #add-project {
   position: absolute;
-  top: 53px;
+  top: 57px;
   width: 100px;
   height: 100px;
   transform: translate(-50%, -50%);
@@ -20,7 +20,7 @@
   z-index: 1;
 }
 
-.iphone-content {
+#iphone-content {
   align-items: center;
   height: 100%;
 }
@@ -32,15 +32,24 @@ img[alt="iPhone"] {
   transform: translate(-50%, -50%) rotate(90deg);
   height: 180%;
   overflow: hidden;
-  z-index: 0;
+  z-index: -1;
+}
+
+img[alt="room"]{
+  position: absolute;
+  top: 57%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 85%;
+  overflow: hidden;
 }
 
 #project-table {
   position: absolute;
-  top: 500px;
+  top: 480px;
   left: 50%;
   transform: translate(-50%, -50%);
-  /* border: 1px solid black; */
+  border: 1px solid black;
   z-index: 1;
   table-layout: fixed;
   max-height: 550px;
@@ -49,25 +58,88 @@ img[alt="iPhone"] {
   overflow-x: hidden;
 }
 #project-table td, tr{
+  padding: 2px;
   display: block;
   height: 100px;
-  width: 600px;
-  /* border: 1px solid black; */
+  width: 900px;
+  border: 1px solid black;
   align-items: center;
   text-align: center;
 }
-button{
-  height: 100px;
-  width: 600px;
+.button-group{
+  display: flex;
+  align-items: center;
 }
-/* #circle-button2 {
+.project-button{
+  height: 100px;
+  width: 700px;
+  font-size: 35px;
+}
+.dropdown-content{
+  display: none;
+}
+button{
+  vertical-align: middle;
+}
+.rename-button{
+  background-image: url("rename.png");
+  width: 100px;
+  height: 100px;
+  background-size: contain;
+}
+.delete-button{
+  background-image: url("delete.png");
+  width: 100px;
+  height: 100px;
+  background-size: contain;
+}
+
+.hidden{
+  display: none;
+}
+#settings-button{
   position: absolute;
-  top: 150px;
-  right: 40px;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  background-color: #f00;
+  left:76%;
+  top: 17%;
+  background-image: url(settings.png);
   border: none;
-  z-index: 1;
-} */
+  width: 70px;
+  height: 70px;
+  background-size: contain;
+}
+#account-button{
+  position: absolute;
+  left:81%;
+  top: 17%;
+  background-image: url(account.png);
+  border: none;
+  width: 68px;
+  height: 70px;
+  background-size: contain;
+}
+#add-button{
+  position: absolute;
+  left:75%;
+  top: 68%;
+  background-image: url(plus.png);
+  border: none;
+  width: 120px;
+  height: 120px;
+  background-size: contain;
+}
+#arrow-button{
+  position: absolute;
+  left:13%;
+  top: 17%;
+  background-image: url(left-arrow.png);
+  border: none;
+  width: 70px;
+  height: 70px;
+  background-size: contain;
+}
+#project-title{
+  position: absolute;
+  font-size: 50px;
+  left: 23%;
+  top:14%;
+}
