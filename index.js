@@ -1,12 +1,20 @@
 document.getElementById("add-project").addEventListener("click", addRow);
 
 function addRow() {
-    var projectName = prompt("Enter a project name:");
+    let projectName = prompt("Enter a project name:");
     if (projectName != null) {
-        var newRow = document.createElement("tr");
-        var newCell = document.createElement("td");
-        newCell.innerHTML = "<button>${projectName}</button>";
+        let newRow = document.createElement("tr");
+        let newCell = document.createElement("td");
+        let newButton = document.createElement("button")
+        newButton.id = projectName;
+        newButton.textContent = projectName;
+        newButton.addEventListener("click", navigateProject);
+        newCell.appendChild(newButton);
         newRow.appendChild(newCell);
         document.getElementById("project-table").appendChild(newRow);
     }
+}
+
+function navigateProject(event){
+    let name = event.target.id;
 }
